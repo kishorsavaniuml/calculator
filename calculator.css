@@ -1,0 +1,14 @@
+.container{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+#display{
+    text-align: end;
+   
+}
+
+.btn{
+    width : 50px;
+}

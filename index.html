@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css" type="text/css">
+        <script src="calculator.js" type="text/javascript" ></script>
+    </head>
+    <body>
+        
+
+
+        <div class="container">
+            <div class="input-wrapper">
+                <input id = "display" size="25" type="text" placeholder="0">
+            </div>
+            <div class="row" id="row-1">
+                <button class="clear btn" onclick="clr()">C</button>
+                <button class="delete btn" onclick="del()">DEL</button>
+                <button class="mode btn" onClick="addVal(this.innerText)">%</button>
+                <button class="opr btn" onClick="addVal(this.innerText)">/</button>
+            </div>
+            <div class="row" id="row-2">
+                <button class="number btn" onClick="addVal(this.innerText)">7</button>
+                <button class="number btn" onClick="addVal(this.innerText)">8</button>
+                <button class="number btn" onClick="addVal(this.innerText)">9</button>
+                <button class="opr btn" onClick="addVal(this.innerText)">*</button>
+            </div>
+            <div class="row" id="row-3">
+                <button class="number btn" onClick="addVal(this.innerText)">4</button>
+                <button class="number btn" onClick="addVal(this.innerText)">5</button>
+                <button class="number btn" onClick="addVal(this.innerText)">6</button>
+                <button class="opr btn" onClick="addVal(this.innerText)">-</button>
+            </div>
+            <div class="row" id="row-4">
+                <button class="number btn" onClick="addVal(this.innerText)">1</button>
+                <button class="number btn" onClick="addVal(this.innerText)">2</button>
+                <button class="number btn" onClick="addVal(this.innerText)">3</button>
+                <button class="opr btn" onClick="addVal(this.innerText)">+</button>
+            </div>
+            <div class="row" id="row-5">
+                <button class="number btn" onClick="addVal(this.innerText)">0</button>
+                <button class="number btn" onClick="addVal(this.innerText)">00</button>
+                <button class="number btn" onClick="addVal(this.innerText)">.</button>
+                <button class="equal btn" id  = "result" onclick="result()">=</button>
+            </div>
+        </div>
+    </body>
+</html>
